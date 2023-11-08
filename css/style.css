@@ -622,12 +622,23 @@ Feature
 
 
 /********modified css*********/
+.about_bg{
+  background-image:linear-gradient(#00000096,#0000008f),url(/images/all-img/banner/ban3.jpg);
+}
+
+
 .lg_ds_none{
   display: none;
 }
+
+.team_member{
+   background: linear-gradient(to bottom,#00150f98, #00150fac), url(/images/all-img/banner/ban4.jpg);
+  background-size: cover;
+}
 .tokenomics_sec {
-  padding: 90px 0;
-  background: linear-gradient(to bottom,#00150f75, #00150f9b), url(/images/all-img/tokenbg.jpg);
+  padding: 80px 0;
+  background: linear-gradient(to bottom,#00150f98, #00150fac), url(/images/all-img/banner/ban2.jpg);
+  background-size: cover;
 }
 
 h3.token_info {
@@ -651,7 +662,7 @@ img.ft_icon {
 
 
 .contact-us{
-  background-image: linear-gradient(#111111de,#111111c8),url(/images/all-img/cont.avif);
+  background-image: linear-gradient(#111111de,#111111c8),url(/images/all-img/banner/ban5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
