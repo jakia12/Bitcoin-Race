@@ -624,6 +624,7 @@ Feature
 /********modified css*********/
 .about_bg{
   background-image:linear-gradient(#00000096,#0000008f),url(/images/all-img/banner/ban3.jpg);
+  padding-bottom:60px
 }
 
 
