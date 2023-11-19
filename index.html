@@ -13,6 +13,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/f5a24ca635.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&amp;display=swap"
       rel="stylesheet"
@@ -165,12 +171,7 @@
                 </p>
                 <!-- <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0x5f5f162c3d7f32e39947950c5b117e6868de41d2" class="button-play video-popup"> Chart </a> -->
 
-                <a
-                  href="https://whitepaper.groki1.vip/"
-                  target="_blank"
-                  class="button bt-white iq-mt-5 iq-ml-10"
-                  >White Paper</a
-                >
+               
               </div>
             </div>
             <div
@@ -390,7 +391,7 @@
               data-wow-delay="0.3s"
             >
               <img
-                src="images/all-img/tokn.jpg"
+                src="images/all-img/img3.png"
                 class="img_ban"
                 alt=""
                 style="border-radius: 8px"
@@ -421,9 +422,19 @@
                 transaction efficiency but also a higher level of security and
                 trust in the blockchain ecosystem.
               </p>
-              <a class="button iq-mt-20" href="buylink" role="button"
+               <p id="contract" style="word-break: break-all;font-size: 18px;">
+                   CA : 0xC278f02ADCB02599F3E544DF7ED08F961B16FDec
+                  </p>
+              <a class="button iq-mt-20" href="https://pancakeswap.finance/info/token/0xC278f02ADCB02599F3E544DF7ED08F961B16FDec" role="button"
                 >Buy Now</a
               >
+               <a
+                  href="https://whitepaper.groki1.vip/"
+                  target="_blank"
+                  style="cursor: pointer;z-index: 99999;"
+                  class="button bt-white iq-mt-5 iq-ml-10"
+                  >White Paper</a
+                >
             </div>
           </div>
         </div>
@@ -544,54 +555,138 @@
       <!-- ===============>> tokenomics section start here <<================= -->
       <section class="tokenomics_sec" id="tokenomics">
         <div class="container">
-          <div class="section-header section-header--max50">
-            <h2 class="mb-15 mt-minus-5" style="margin-bottom: 50px">
-              <span>Tokenomics</span> Of Groki1
-            </h2>
+         
+         
+           <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div
+              class="site-heading text-center wow animate__animated animate__fadeInUp animated"
+              data-wow-duration="1s"
+              data-wow-delay=".25s"
+              style="
+                visibility: visible;
+                animation-duration: 1s;
+                animation-delay: 0.25s;
+              "
+            >
+              
+              
+            <div class="col-sm-12">
+              <div class="heading-title">
+                <small class="iq-font-green">Tokenomics</small>
+                <h2 class="title iq-tw-6">Token <span>Distribution</span></h2>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
-              <h3 class="token_info">Token Info :</h3>
-              <div class="chart-content-inner">
-                <h6>Token Name - Groki1</h6>
-
-                <br />
-
-                <!-- <h6>Ticker - $MLTX</h6> -->
-
-                <br />
-
-                <h6>Max bag at start will be - 3% (30k tokens)</h6>
-                <br />
-                <h6>Initial LP - 1 ETH</h6>
-
-                <br />
-
-                <h6>Total Supply - 1 Million</h6>
-                <br />
-
-                <h6>buy /Sell Tax - 5%</h6>
-                <br />
-
-                <h6>Contract:</h6>
-
-                <div class="copy-container">
-                  <h6 id="contract" style="word-break: break-all">
-                    0xC278f02ADCB02599F3E544DF7ED08F961B16FDec
-                  </h6>
-
-                  <br />
+              <div class="heading-divider"></div>
+              <!-- <p>
+                Defipal launch at Binance Smart Chain <br />
+                with 1.000.000.000 Total Supply <br />
+                <b>0x</b>
+              </p> -->
+            </div>
+          </div>
+          <div class="col-md-12" style="margin: 20px 0 20px">
+          <div
+            class="token-details-chart-item wow animate__animated animate__fadeInUp animated"
+            data-wow-duration="1s"
+            data-wow-delay=".50s"
+            style="
+              visibility: visible;
+              animation-duration: 1s;
+              animation-delay: 0.5s;
+            "
+          >
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="" style="width: 300px">
+                  <canvas
+                    id="chart1"
+                    width="400px"
+                    height="400px"
+                    class="style"
+                  ></canvas>
+                  <div class="token-chart-icon"></div>
                 </div>
-
-                <br />
+              </div>
+              <div class="col-md-4">
+                <div class="chart-label">
+                  <ul class="text-white">
+                    <li>
+                      <span
+                        class="chart-label-color chart-label-color-1"
+                      ></span>
+                      <span class="chart-label-percentage">30%</span> Presale
+                    </li>
+                    <li>
+                      <span
+                        class="chart-label-color chart-label-color-2"
+                      ></span>
+                      <span class="chart-label-percentage">15%</span> 
+                      Liquidity
+                    </li>
+                    <li>
+                      <span
+                        class="chart-label-color chart-label-color-3"
+                      ></span>
+                      <span class="chart-label-percentage">8%</span>
+                     Cex
+                    </li>
+                    <li>
+                      <span
+                        class="chart-label-color chart-label-color-4"
+                      ></span>
+                      <span class="chart-label-percentage">7%</span>
+                 Airdrop
+                    </li>
+                    <li>
+                      <span
+                        class="chart-label-color chart-label-color-5"
+                      ></span>
+                      <span class="chart-label-percentage">40%</span>
+                      Burn
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="chart-label">
+                  <ul class="text-white">
+                    <li>
+                      <span class="img_spn"
+                        ><img src="/images/tx1.png" alt=""
+                      /></span>
+                      5% Buy Tax
+                    </li>
+                    <li>
+                      <span class="img_spn"
+                        ><img src="/images/tx2.png" alt=""
+                      /></span>
+                      5% Sell Tax
+                    </li>
+                    <li>
+                      <span class="img_spn"
+                        ><img src="/images/tx3.png" alt=""
+                      /></span>
+                     1M Total Supply
+                    </li>
+                    <li>
+                      <span class="img_spn"
+                        ><img src="/images/tx5.png" alt=""
+                      /></span>
+                     Max bag at start will be - 1%
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-delay="0.7s">
-              <div class="img_box">
-                <img src="/images/all-img/ban4.png" alt="" class="tk_img" />
-              </div>
-            </div>
+            <!-- <h4>Tax Allocation</h4> -->
           </div>
+        </div>
+        </div>
+
+        
+        <div class="row"></div>
         </div>
       </section>
       <!-- ===============>> tokenomics section end here <<================= -->
@@ -1003,7 +1098,7 @@
               class="col-lg-6 align-self-center mt-5 mt-lg-0 wow fadeInLeft"
               data-wow-delay="0.3s"
             >
-              <img src="/images/all-img/tkn.png" alt="" class="tk_img" />
+              <img src="/images/all-img/img2.png" alt="" class="tk_img" />
             </div>
             <div
               class="col-lg-6 r9-mt-40 wow fadeInRight"
@@ -1212,92 +1307,25 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-12">
+              <div class="text-center">
+                <div class="social_icon" style="margin-bottom:30px">
+                  <a href="https://t.me/groki1" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                  
+                    <a href="https://twitter.com/groki_1?t=bKfcAxtoRGDqquK3cCWf7w&s=09" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </a>
+                </div>
+              </div>
               <div class="iq-copyright text-white">© Copyright 2023 Groki1</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Token Sale Proceeds END -->
-
-    <div
-      class="modal fade iq-login"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content blue-bg">
-          <div class="modal-header text-center">
-            <h4 class="modal-title">Login</h4>
-            <button
-              type="button"
-              class="btn-close bg-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="contact-form">
-              <div class="section-field">
-                <input
-                  class="require"
-                  id="contact_name"
-                  type="text"
-                  placeholder="Name*"
-                  name="name"
-                />
-              </div>
-              <div class="section-field">
-                <input
-                  class="require"
-                  id="contact_email"
-                  type="email"
-                  placeholder="Email*"
-                  name="email"
-                />
-              </div>
-              <a class="button iq-mtb-10" href="javascript:void(0)">Sign In</a>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" />Remember
-                      Me</label
-                    >
-                  </div>
-                </div>
-                <div class="col-sm-6 text-end">
-                  <a href="javascript:void(0)">Forgot Password</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer text-center">
-            <div>
-              Don't Have an Account?
-              <a href="javascript:void(0)" class="iq-font-yellow"
-                >Register Now</a
-              >
-            </div>
-            <ul class="iq-media-blog iq-mt-20">
-              <li>
-                <a href="# "><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="# "><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="# "><i class="fa fa-google"></i></a>
-              </li>
-              <li>
-                <a href="# "><i class="fa fa-github"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+   
     <!-- back-to-top -->
     <div id="back-to-top">
       <a class="top" id="top" href="#top"
@@ -1336,5 +1364,45 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/custom.js"></script>
+    <script>
+        const ctx2 = document.getElementById("chart1").getContext("2d");
+      const myChar2 = new Chart(ctx2, {
+        type: "doughnut",
+        data: {
+          labels: ["Presale", "Liquidity ", "Cex","Airdrop","Burn"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [30, 15, 8,7,40],
+              backgroundColor: [
+                "#ae31d9",
+                "#4fc489",
+                "#0ba1d6",
+                "#efe943",
+                "#e9734a",
+              ],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+        },
+      });
+
+      function updateChart() {
+        myChart.data.datasets[0].data = [
+          newDataValue1,
+          newDataValue2,
+          newDataValue3,
+        ];
+        myChart.update();
+      }
+
+    </script>
   </body>
 </html>
