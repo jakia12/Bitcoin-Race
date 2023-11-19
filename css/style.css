@@ -623,7 +623,7 @@ Feature
 
 /********modified css*********/
 .about_bg{
-  background-image:linear-gradient(#00000096,#0000008f),url(/images/all-img/banner/ban3.jpg);
+  background-image:linear-gradient(#000000ae,#000000ae),url(/images/all-img/banner/ban3.jpg);
   padding-bottom:60px
 }
 
@@ -689,4 +689,205 @@ img.img-fluid.center-block.part_img {
   width: 100%;
 }
 
+}
+
+
+.social_icon a{
+  font-size: 29px;
+  margin-right:13px
+}
+
+
+.tokenomic_sec {
+  padding: 90px 0;
+  background-color: #000041;
+}
+.tokenomic_sec::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.token-details-chart {
+  padding: 18px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.blur-bg-2 {
+  background-image: url(/web/20230514035822im_/https://defipal.net/assets/img/shape/shape-bg-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.token-chart-circle {
+  width: 300px;
+  height: 219px;
+  position: relative;
+}
+
+.token-chart-icon {
+  background: url(/web/20230514035822im_/https://defipal.net/assets/img/icon/chart-icon.png)
+    no-repeat center center;
+  background-size: 60px auto;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out;
+}
+
+.token-details-chart {
+  background-color: #161e71;
+}
+
+.chart-label li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chart-label-color-1 {
+  background: #ae31d9;
+}
+
+.chart-label-percentage {
+  font-weight: bold;
+}
+
+.blur-bg-2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(13, 29, 147, 0.64);
+  z-index: -1;
+}
+
+.token-details-chart-item h4 {
+  color: #fff;
+}
+.chart-label-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.token-details-chart {
+  padding: 18px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.token-chart-circle {
+  width: 300px;
+  position: relative;
+}
+
+.chart-label-color-1 {
+  background: #ae31d9;
+}
+
+.chart-label-percentage {
+  font-weight: bold;
+}
+
+.chart-label-color-2 {
+  background: #4fc489;
+}
+
+.chart-label-color-3 {
+  background: #0ba1d6;
+}
+
+.chart-label-color-4 {
+  background: #efe943;
+}
+.chart-label-color-5 {
+  background: #e9734a;
+}
+
+.chart-label-percentage {
+  font-weight: bold;
+}
+.chart-label-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+.token-chart-circle_2 {
+  width: 260px;
+  position: relative;
+  height: 219px;
+}
+
+/*********road map*************/
+
+.main-timeline .date-outer:before {
+  background: linear-gradient(to right, #1fe1c7 0%, #00adff 51%, #1fe1c7 100%);
+}
+
+.main-timeline .timeline-content {
+  background-color: #000041;
+}
+.main-timeline .timeline_content_right {
+  width: 33%;
+  position: relative;
+  left: -144px;
+  padding: 30px;
+  float: right;
+  border-radius: 15px;
+  margin-left: 23px;
+  background: #000041;
+}
+
+.main-timeline .timeline_content_left {
+  width: 33%;
+  position: relative;
+  left: -45px;
+  padding: 30px;
+  float: right;
+  border-radius: 15px;
+  margin-left: 23px;
+  background: #000041;
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+  content: "";
+  width: 225px;
+  height: 84px;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  transition: all 0.33s ease-out 0s;
+}
+
+.img_spn img {
+    width: 60px;
 }
