@@ -8,8 +8,8 @@ var circles = [],
               'rgba(249, 183, 7,' + opacity + ')',
               'rgba(249, 183, 7,' + opacity + ')'
              ],
-    minSize = 0.5,                                        // the minimum size of the circles in px
-    maxSize = 1,                                       // the maximum size of the circles in px
+    minSize = 2,                                        // the minimum size of the circles in px
+    maxSize = 3,                                       // the maximum size of the circles in px
     numCircles = 100,                                   // the number of circles
     minSpeed = -3,                                     // the minimum speed, recommended: -maxspeed
     maxSpeed = 3,                                    // the maximum speed of the circles
